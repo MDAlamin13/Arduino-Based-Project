@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<title>B1-G5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #283747;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('Images/cover.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+
+
+.container-fluid {
+      padding: 60px 50px;
+  }
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+
+p {
+    font-size: 16px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">TITLE</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i>DESCRIPTION</a>
+    <a href="#equip" class="w3-bar-item w3-button w3-hide-small"></i>EQUIPMENTS</a>
+    <a href="#works" class="w3-bar-item w3-button w3-hide-small"></i>PRINCIPLES</a>
+    <a href="#diag" class="w3-bar-item w3-button w3-hide-small"></i>BLOCK DIAGRAM</a>
+    <a href="#algo" class="w3-bar-item w3-button w3-hide-small"></i>ALGORITHM</a>
+    <a href="#pin" class="w3-bar-item w3-button w3-hide-small"></i>PIN DIAGRAM</a>
+    <a href="#vid" class="w3-bar-item w3-button w3-hide-small"></i>VIDEO</a>
+    <a href="#problems" class="w3-bar-item w3-button w3-hide-small"></i>PROBLEMS</a>
+    <a href="#members" class="w3-bar-item w3-button w3-hide-small"></i>MEMEBERS</a>
+    <a href="#teachers" class="w3-bar-item w3-button w3-hide-small"></i>TEACHERS</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">DESCRIPTION</a>
+    <a href="#equip" class="w3-bar-item w3-button" onclick="toggleFunction()">EQUIPMENTS</a>
+    <a href="#works" class="w3-bar-item w3-button" onclick="toggleFunction()">PRINCIPLES</a>
+    <a href="#diag" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOCK DIAGRAM</a>
+    <a href="#algo" class="w3-bar-item w3-button" onclick="toggleFunction()">ALGORITHMS</a>
+    <a href="#pin" class="w3-bar-item w3-button" onclick="toggleFunction()">PIN DIAGRAM</a>
+    <a href="#vid" class="w3-bar-item w3-button" onclick="toggleFunction()">VIDEO</a>
+    <a href="#problems" class="w3-bar-item w3-button" onclick="toggleFunction()">PROBLEMS</a>
+    <a href="#members" class="w3-bar-item w3-button" onclick="toggleFunction()">MEMBERS</a>
+    <a href="#teachers" class="w3-bar-item w3-button" onclick="toggleFunction()">TEACHERS</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ARDUINO <span class="w3-hide-small">BASED</span> ASSISTANT</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content container-fluid w3-padding-64" id="about">
+  <h3 class="w3-center">A BRIEF DESCRIPTION</h3>
+  
+  <p>The main purpose of our project is build a device, which can help in our day-to-day life measuring the weather parameters. The device will send the necessary information or suggestion to android device via bluetooth when asked. We have provided the information of temparature and humidity of the environment and whether there is rain or not. According to this information, we try to suggest song and activities. The device can also be used for setting alarm and to-do list. </p>
+</div>  
+<br/> <br/><br/><br/>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">EQUIPMENTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content container-fluid w3-padding-64" id="equip">
+   <h3 class="w3-center">EQUIPMENTS</h3>
+  <br/><br/>
+  <div class="w3-row-padding">
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/arduino.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Arduino UNO</b></p>
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/pir.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>PIR Motion Sensor</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/rtc.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>DS3231 Real Time Clock</b></p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/dht22.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>DHT22 Humidity and Temperature Sensor</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/fc-37.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>FC-37 Rain Drop module</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/hc05.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>HC-05 Bluetooth Module</b></p>
+        
+      </div>
+    </div>
+
+
+
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/buzzer.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Buzzer</b></p>
+        
+      </div>
+    </div>
+
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">DIAGRAMS</span>
+  </div>
+</div>
+<br/><br/><br/>
+<!-- Container (Contact Section) -->
+<div class="w3-content container-fluid w3-padding-64" id="diag">
+  
+  <h3 class="w3-center">BLOCK DIAGRAM</h3>
+  <br/><br/><br/>
+  <span><img src="Images/block.png" alt="CIRCUIT DIAGRAM" height="599" width="719"><br/><br/>
+  </span>
+  <!--<br/><br/><br/><br/>
+  <img src="circuit.BMP" alt="CIRCUIT DIAGRAM" height="680" width="960">
+  <h3 class="w3-center">PIN DIAGRAM</h3>
+  -->
+</div>
+
+
+
+<div class="w3-content container-fluid w3-padding-64" id="works">
+  <h3 class="w3-center">HOW IT WORKS ?</h3>
+  <br/><br/>
+
+   <ol>
+  <li>Arduino Uno for interfacing to various hardware peripherals.</li>
+  <li>The PIR Motion sensor is used to identify movement. Then it waits for data.</li>
+  <li>The DHT22 is used to measure the humidity and temparature.</li>
+  <li>Rain sensor(FC37) is used for measuring rain. The range of rain measurement is divided in four parts.</li>
+  <li>Then songs and activities suggestions are sent to android device through bluetooth(HC-05).</li>
+  <li>There is also arrangements for setting alarm.</li>
+  <li>DS3231 rtc module is used as real time clock.</li>
+  <li>A buzzer is used for sound of alarm.</li>
+  <li>To-do list can also be set.</li>
+  <li>All data are sent through HC05.</li>
+</div>
+
+
+
+<div class="w3-content container-fluid w3-padding-64" id="algo">
+  <h3 class="w3-center">ALGORITHM</h3>
+  <br/><br/>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Start<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. if time = Set time for Alarm<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Alarm <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.if(movement)<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.if(receives data)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.if data="Alarm"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. set Alarm <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.else if data="Todo"<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.set activity list<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.else if data="List"<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.see activity list<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.else if data="Weather"<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.show temparature, humidity and rain probability<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14.suggest song and activity<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.goto (2)<br/>
+
+</div>
+
+
+
+
+
+<div class="w3-content container-fluid w3-padding-64" id="pin">
+  
+  <h3 class="w3-center">PIN DIAGRAM</h3>
+  <br/><br/><br/>
+ 
+  
+  <span><img src="Images/circuit.BMP" alt="CIRCUIT DIAGRAM" height="680" width="960"></span>
+ </div>
+
+
+<div class="w3-content container-fluid w3-padding-64" id="vid">
+  
+  <h3 class="w3-center">PROJECT VIDEO</h3>
+  <br/><br/><br/>
+ 
+  
+  <iframe width="720" height="512"
+src="https://www.youtube.com/embed/so0-1tSoE8Q?autoplay=1">
+</iframe>
+ </div>
+
+
+
+<div class="w3-content container-fluid w3-padding-64" id="problems">
+  
+  <h3 class="w3-center">PROBLEMS FACED</h3>
+  <br/><br/>
+  <ol>
+  <li>We had problems in setting baud rate for bluetooth device.</li>
+  <li>Whenever power source was unplugged, we had to manually set time for DS3231 RTC module.</li>
+  <li>We had problems in setting the ranges in rain sensor.</li>
+</ol>
+
+ 
+  
+ </div>
+
+
+
+<br/><br/><br/>
+<div class="w3-content container-fluid w3-padding-64" id="members">
+   <h3 class="w3-center">GROUP MEMBERS</h3>
+  <br/><br/>
+  <p class="w3-center">Section : B1<br/> Group : 5 </p><br/>
+  <div class="w3-row-padding">
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/shaon.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Monjur-E-Rasul (#1305028)</b></p>
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/imran.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Imran Hossen (#1305032)</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/ananya.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Ananya Bhattacharjee (#1305046)</b></p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/bindu.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Abir Shafi Bindu (#1305052)</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/alu.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b>Md. Al Amin (#1305054)</b></p>
+        
+      </div>
+    </div>
+    
+    
+
+  </div>
+
+
+
+
+
+<br/><br/><br/>
+<div class="w3-content container-fluid w3-padding-64" id="teachers">
+   <h3 class="w3-center">COURSE TEACHERS</h3>
+   <br/><br/><br/>
+  <div class="w3-row-padding">
+    <div class="w3-third container-fluid w3-margin-bottom">
+      <img src="Images/sattarsir.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b><a href="http://cse.buet.ac.bd/faculty/facdetail.php?id=masattar" title="CSE,BUET" target="_blank" class="w3-hover-text-teal">Md. Abdus Sattar</a></b></p>
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/sukarnasir.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b><a href="http://cse.buet.ac.bd/faculty/facdetail.php?id=sukarnabarua" title="CSE,BUET" target="_blank" class="w3-hover-text-teal">Sukarna Barua</a></b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third container-fluid">
+      <img src="Images/azimsir.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="container-fluid w3-white">
+        <p><b><a href="http://cse.buet.ac.bd/faculty/facdetail.php?id=aashik" title="CSE,BUET" target="_blank" class="w3-hover-text-teal">Md. Aashikur Rahman Azim</a></b></p>
+        
+      </div>
+    </div>
+  </div>
+  
+    
+    
+
+  </div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+  <p>Powered by <a href="http://cse.buet.ac.bd/" title="CSE,BUET" target="_blank" class="w3-hover-text-red">Department of CSE,BUET</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
